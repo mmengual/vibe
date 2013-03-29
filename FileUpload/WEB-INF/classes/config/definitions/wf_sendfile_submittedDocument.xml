@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definition name="wf_sendfile_submittedDocument" caption="Soumission d'un document" type="2" nextId="11" definitionType="2" databaseId="ff8081813bad2d76013bbda285d9059d">
+  <item name="workflowProcess" caption="__workflow_process" id="1">
+    <properties>
+      <property name="initialState" value=""/>
+      <property name="endState" value=""/>
+      <property name="runAs" value=""/>
+    </properties>
+    <item name="state" caption="__state" type="data" dataType="workflowState" id="2">
+      <properties>
+        <property name="caption" value="Notification"/>
+        <property name="name" value="s1_notification"/>
+        <property name="description"/>
+      </properties>
+      <item name="transitions" caption="__transitions" id="3">
+        <properties/>
+      </item>
+      <item name="onEntry" caption="__onEntry" unique="./item[@name='onEntry']" multipleAllowedInParent="false" id="4">
+        <item name="notifications" caption="__notifications" multipleAllowedInParent="true" id="5">
+          <properties>
+            <property name="entryCreator" value="true"/>
+            <property name="team" value="false"/>
+            <property name="userGroupNotification" value=""/>
+            <property name="emailAddrs"/>
+            <property name="subjText" value="Document soumis - Confirmation :"/>
+            <property name="appendTitle" value="true"/>
+            <property name="includeLink" value="true"/>
+            <property name="includeFullEntry" value="true"/>
+            <property name="bodyText">Votre document a été soumis. Le destinataire a été notifié de sa présence.</property>
+            <property name="appendBody" value="false"/>
+          </properties>
+          <operations>
+            <operation name="addOption" caption="__add"/>
+            <operation name="copyItem" caption="__copy"/>
+            <operation name="deleteItem" caption="__delete"/>
+            <operation name="modifyItem" caption="__modify"/>
+            <operation name="moveItem" caption="__move"/>
+          </operations>
+        </item>
+        <item name="notifications" caption="__notifications" multipleAllowedInParent="true" id="6">
+          <properties>
+            <property name="entryCreator" value="false"/>
+            <property name="team" value="false"/>
+            <property name="userGroupNotification" value=""/>
+            <property name="emailAddrs"/>
+            <property name="condition" caption="__workflow_entry_user_list" type="workflowEntryDataUserList">
+              <workflowEntryDataUserList definitionId="ff8081813bad2d76013bb3ce21bb0418" elementName="user_list:destinataire"/>
+            </property>
+            <property name="subjText" value="Nouveau document - Notification : "/>
+            <property name="appendTitle" value="true"/>
+            <property name="includeLink" value="true"/>
+            <property name="includeFullEntry" value="true"/>
+            <property name="bodyText">Bonjour, Un document vient de vous avoir été partager. Cliquer sur le lien pour y accéder.</property>
+            <property name="appendBody" value="false"/>
+          </properties>
+          <operations>
+            <operation name="addOption" caption="__add"/>
+            <operation name="copyItem" caption="__copy"/>
+            <operation name="deleteItem" caption="__delete"/>
+            <operation name="modifyItem" caption="__modify"/>
+            <operation name="moveItem" caption="__move"/>
+          </operations>
+        </item>
+      </item>
+    </item>
+    <item name="accessControls" caption="__accessControls" unique="./item[@name='accessControls']" multipleAllowedInParent="false" id="7">
+      <item name="deleteAccess" caption="__deleteAccess" category="accessControlsLayout" multipleAllowedInParent="false" id="8">
+        <properties>
+          <property name="folderDefault" value="false"/>
+          <property name="entryCreator" value="true"/>
+          <property name="team" value="false"/>
+          <property name="userGroupAccess" value=""/>
+        </properties>
+      </item>
+      <item name="readAccess" caption="__readAccess" category="accessControlsLayout" multipleAllowedInParent="false" id="9">
+        <properties>
+          <property name="folderDefault" value="false"/>
+          <property name="entryCreator" value="true"/>
+          <property name="team" value="false"/>
+          <property name="userGroupAccess" value=""/>
+          <property name="condition" caption="__workflow_entry_user_list" type="workflowEntryDataUserList">
+            <workflowEntryDataUserList definitionId="ff8081813bad2d76013bb3ce21bb0418" elementName="user_list:destinataire"/>
+          </property>
+          <property name="disallowReplies" value="false"/>
+        </properties>
+      </item>
+      <item name="modifyAccess" caption="__modifyAccess" category="accessControlsLayout" multipleAllowedInParent="false" id="10">
+        <properties>
+          <property name="folderDefault" value="false"/>
+          <property name="entryCreator" value="true"/>
+          <property name="team" value="false"/>
+          <property name="userGroupAccess" value=""/>
+        </properties>
+      </item>
+    </item>
+    <operations>
+      <operation name="addOption" caption="__add"/>
+      <operation name="modifyItem" caption="__modify"/>
+      <operation name="moveItem" caption="__move"/>
+    </operations>
+    <operations>
+      <operation name="addOption" caption="__add"/>
+      <operation name="modifyItem" caption="__modify"/>
+      <operation name="moveItem" caption="__move"/>
+    </operations>
+  </item>
+  <properties>
+    <property name="caption" value="Soumission d'un document"/>
+    <property name="name" value="wf_sendfile_submittedDocument"/>
+  </properties>
+  <export-mappings>
+    <export definitionId="ff8081813bad2d76013bb3ce21bb0418">document</export>
+  </export-mappings>
+</definition>

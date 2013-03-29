@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definition name="picture_form" caption="Picture" type="1" nextId="30" definitionType="1" databaseId="ff8081813c1ee1e7013c29f2124303f6"> 
+  <item name="entryForm" caption="__entry_form_definition" type="form" id="1" display="form"> 
+    <properties/>  
+    <item name="entryFormForm" caption="__form" id="2"> 
+      <properties> 
+        <property name="name" value="form1"/>  
+        <property name="type" value="form"/> 
+      </properties>  
+      <item name="customJsp" caption="__custom_jsp" type="data" dataType="customJsp" category="generalLayout" display="form" id="23"> 
+        <properties> 
+          <property name="caption" value="picture_form"/>  
+          <property name="name" value="picture_form"/> 
+        </properties>  
+        <jsps> 
+          <jsp name="custom" value="picture_form.jsp"/> 
+        </jsps>  
+        <item name="title" caption="__title" type="data" dataType="title" display="form" id="24"> 
+          <properties> 
+            <property name="caption" value="__title"/>  
+            <property name="name" value="title"/>  
+            <property name="width" value="60"/>  
+            <property name="generated" value="false"/>  
+            <property name="itemSource" value="ss_none"/>  
+            <property name="required" value="false"/> 
+          </properties> 
+        </item>  
+        <item name="description" caption="__description" type="data" dataType="description" category="commonEntryData" display="form" id="25"> 
+          <properties> 
+            <property name="caption" value="__description"/>  
+            <property name="name" value="description"/>  
+            <property name="height" value=""/>  
+            <property name="required" value="false"/>  
+            <property name="fieldModificationAllowed" value="false"/> 
+          </properties> 
+        </item>  
+        <operations> 
+          <operation name="addOption" caption="__add"/>  
+          <operation name="deleteItem" caption="__delete"/>  
+          <operation name="modifyItem" caption="__modify"/>  
+          <operation name="moveItem" caption="__move"/> 
+        </operations>  
+        <operations> 
+          <operation name="addOption" caption="__add"/>  
+          <operation name="deleteItem" caption="__delete"/>  
+          <operation name="modifyItem" caption="__modify"/>  
+          <operation name="moveItem" caption="__move"/> 
+        </operations>  
+        <operations> 
+          <operation name="addOption" caption="__add"/>  
+          <operation name="deleteItem" caption="__delete"/>  
+          <operation name="modifyItem" caption="__modify"/>  
+          <operation name="moveItem" caption="__move"/> 
+        </operations>  
+        <operations> 
+          <operation name="addOption" caption="__add"/>  
+          <operation name="deleteItem" caption="__delete"/>  
+          <operation name="modifyItem" caption="__modify"/>  
+          <operation name="moveItem" caption="__move"/> 
+        </operations>  
+        <item name="attachFiles" caption="__attach_files" type="data" id="6" dataType="fileList" category="commonEntryData" display="form"> 
+          <properties> 
+            <property name="caption" value="__attach_files"/>  
+            <property name="name" value="ss_attachFile"/>  
+            <property name="width" value="30"/>  
+            <property name="number" value="5"/>  
+            <property name="storage" value="simpleFileRepository"/>  
+            <property name="hide" value="true"/> 
+          </properties> 
+        </item>  
+        <item name="graphic" caption="__graphic" type="data" dataType="graphic" category="commonEntryData" display="form" id="27"> 
+          <properties> 
+            <property name="caption" value="Image"/>  
+            <property name="name" value="image"/>  
+            <property name="width" value="50"/>  
+            <property name="maxWidth" value="800"/>  
+            <property name="maxHeight" value="600"/>  
+            <property name="storage" value="simpleFileRepository"/> 
+          </properties>  
+          <operations> 
+            <operation name="deleteItem" caption="__delete"/>  
+            <operation name="modifyItem" caption="__modify"/>  
+            <operation name="moveItem" caption="__move"/> 
+          </operations> 
+        </item>  
+        <item name="entryFormButtons" caption="__form_buttons" id="7" category="entryLayout" display="form"> 
+          <item name="okButton" caption="__ok_button" id="8"> 
+            <properties> 
+              <property name="caption" value="__ok"/>  
+              <property name="onClick" value=""/> 
+            </properties> 
+          </item>  
+          <item name="cancelButton" caption="__cancel_button" id="9"> 
+            <properties> 
+              <property name="caption" value="__cancel"/>  
+              <property name="onClick" value=""/> 
+            </properties> 
+          </item>  
+          <properties> 
+            <property name="alignment" value="left"/> 
+          </properties> 
+        </item> 
+      </item> 
+    </item> 
+  </item>  
+  <item name="entryView" caption="__entry_view_definition" id="10" display="view"> 
+    <properties> 
+      <property name="type" value="entryView"/> 
+    </properties>  
+    <jsps> 
+      <jsp name="custom" value="entry_view_pictures.jsp"/> 
+    </jsps> 
+  </item>  
+  <item name="entryBlogView" caption="__entry_blog_view_definition" id="17" display="view"> 
+    <properties> 
+      <property name="type" value="blog"/> 
+    </properties>  
+    <item name="titleBlogView" caption="__title" id="18"> 
+      <properties> 
+        <property name="caption" value="__title"/>  
+        <property name="showDocNumber" value=""/> 
+      </properties> 
+    </item>  
+    <item name="descriptionBlogView" caption="__description" id="19"> 
+      <properties> 
+        <property name="caption" value="__description"/> 
+      </properties> 
+    </item>  
+    <item name="entryBlogWorkflow" caption="__entry_workflow" id="20"> 
+      <properties> 
+        <property name="caption" value="__entry_workflow"/> 
+      </properties> 
+    </item>  
+    <item name="entryBlogAttachments" caption="__entry_attachments" id="21"> 
+      <properties> 
+        <property name="caption" value="__entry_attachments"/> 
+      </properties> 
+    </item>  
+    <item name="entryBlogComments" caption="__entry_blog_comments" id="22"> 
+      <properties> 
+        <property name="caption" value="__entry_comments"/> 
+      </properties> 
+    </item> 
+  </item>  
+  <properties> 
+    <property name="caption" value="Picture"/>  
+    <property name="name" value="picture_form"/> 
+  </properties>  
+  <export-mappings/>  
+  <export-mappings/>
+</definition>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template type="5">
+  <attribute name="templateTitle" type="string">Partage de fichier</attribute>
+  <attribute name="templateDescription" type="description">&lt;p&gt;Ce dossier permet de partager des fichiers à un ou plusieurs utilisateurs spécifiques de manière simplifiée.&lt;/p&gt;</attribute>
+  <attribute name="title" type="string">Drop file</attribute>
+  <attribute name="description" type="description"></attribute>
+  <attribute name="iconName" type="string">/icons/folder_blue_file_library.gif</attribute>
+  <attribute name="name" type="string">Partage_fichier</attribute>
+  <property name="library">true</property>
+  <property name="mirrored">false</property>
+  <property name="uniqueTitle">false</property>
+  <property name="inheritFunctionMembership">true</property>
+  <property name="inheritDefinitions">false</property>
+  <property name="inheritTeamMembers">true</property>
+  <definition name="folder_documents" databaseId="ff8081813c1ee1e7013c4d88bd200504"/>
+  <definition name="_libraryFolder" internalId="402883c6115753d8011157619e350009" databaseId="ff8081813c1ee1e7013c4d447aa204c3"/>
+  <definition name="wf_sendfile_submittedDocument" databaseId="ff8081813c1ee1e7013c4d88bd3e0505"/>
+  <definition name="document" databaseId="ff8081813c1ee1e7013c4d88bd040503"/>
+  <definition name="_libraryEntry" internalId="402883c6115753d8011157829367000f" databaseId="ff8081813c1ee1e7013c4d447a5c04b8"/>
+  <definition name="wf_sendfile_submittedDocument" databaseId="ff8081813c1ee1e7013c4d88bd3e0505"/>
+  <definition name="wf_sendfile_submittedDocument" databaseId="ff8081813c1ee1e7013c4d88bd3e0505">
+    <definition name="document" databaseId="ff8081813c1ee1e7013c4d88bd040503"/>
+  </definition>
+</template>

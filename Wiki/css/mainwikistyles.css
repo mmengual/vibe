@@ -1,0 +1,95 @@
+
+
+
+
+#maix-wiki h1 {
+	 margin: 0;
+	 padding: 0;
+	 width: 100%;
+	 border: 1px #70a9c7 solid;
+	 border-radius: 3px;
+	 float: left;
+}
+ 
+ #maix-wiki h2{
+	 margin: 5px 10px 10px 37px;
+	 background-image:url('/ssf/pics/Bluebg_rounded.png');
+	 background-repeat: no-repeat;
+ }
+ 
+ #maix-wiki #col1 {
+	 width: 25%;
+	 float: left; 
+ 	 border: 1px #70a9c7 solid;
+	 border-radius: 3px;
+ 	 background-color: rgba(0,0,255,0.05);
+     behavior: url('/ssf/js/pie.htc');
+ }
+ 
+
+ #maix-wiki #col2outer {
+	 width: 74%;
+	 float: right;
+	 margin: 0;
+	 padding: 0;
+
+ }
+ 
+ #maix-wiki #col2title {
+	 width: 74%;
+	 float: right;
+	 margin: 0;
+	 padding: 0;
+	 border: 1px  #70a9c7 solid;
+	 border-radius: 3px;
+	 behavior: url('/ssf/js/pie.htc');
+
+ }
+ 
+ 
+ #maix-wiki #col2outer #header { 
+  	 border: 1px #70a9c7 solid;
+	 border-radius: 3px;
+ 	 background-color: rgba(0,0,255,0.05);
+ }
+
+ #maix-wiki #col2outer #col2mid {
+	 width: 100%;
+	 float: right;
+ 	 border: 1px #70a9c7 solid;
+ 	 border-radius: 5px;
+ 	 behavior: url('/ssf/js/pie.htc');
+ 	 background-color: rgba(0,0,125,0.02);
+ }
+ 
+ #maix-wiki #col2outer #col2side {
+	 width: 67%;
+	 float: right;
+ 	 border: 1px #70a9c7 solid;
+	 border-radius: 3px;
+	 behavior: url('/ssf/js/pie.htc');
+ }
+ 
+ 
+ #maix-wiki #col2outer #searchResults {
+	 float: right;
+	 width: 66%;
+	 
+ }
+ #maix-wiki #col2outer #searchField {
+	 float: left;
+	 width: 31%;
+ } 
+ 
+ #maix-wiki h3 {
+	 font-family: cursive;
+	 font-size: large;	 	 
+ }
+ 
+ 
+ .nobullet li {	 
+	 list-style: none;
+}
+	 
+
+	

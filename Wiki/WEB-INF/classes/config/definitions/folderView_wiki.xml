@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definition name="folderView_wiki" caption="Wiki review" type="5" nextId="11" definitionType="5" databaseId="ff8081813b1840c0013b1845954d0002">
+  <item name="folderForm" caption="__folder_form" type="form" id="1" display="form">
+    <properties/>
+    <item name="title" caption="__title" type="data" id="2">
+      <properties>
+        <property name="caption" value="__title"/>
+        <property name="name" value="title"/>
+        <property name="width" value="60"/>
+        <property name="generated" value=""/>
+        <property name="itemSource" value=""/>
+        <property name="required" value=""/>
+      </properties>
+    </item>
+    <item name="description" caption="__description" type="data" id="3">
+      <properties>
+        <property name="caption" value="__description"/>
+        <property name="name" value="description"/>
+        <property name="height" value=""/>
+        <property name="required" value=""/>
+        <property name="fieldModificationAllowed" value=""/>
+      </properties>
+    </item>
+    <item name="htmlEditorTextarea" caption="__html_editor_text_area" type="data" dataType="description" category="commonEntryData" display="form" id="10">
+      <properties>
+        <property name="caption" value="Page d'accueil"/>
+        <property name="name" value="pageAccueil"/>
+        <property name="height" value=""/>
+        <property name="toolbarType" value="standard"/>
+        <property name="required" value="false"/>
+        <property name="fieldModificationAllowed" value="false"/>
+      </properties>
+    </item>
+    <item name="folderIcon" caption="__icon" type="data" id="4">
+      <properties>
+        <property name="caption" value="__icon"/>
+        <property name="name" value="iconName"/>
+      </properties>
+    </item>
+  </item>
+  <item name="forumView" caption="__folder_view" id="5">
+    <item name="dashboardCanvas" caption="__dashboard_canvas" id="6">
+      <properties>
+        <property name="caption" value="__dashboard_canvas"/>
+      </properties>
+    </item>
+    <item name="customJspView" caption="__custom_jsp" category="generalViewLayout" display="view" id="9">
+      <properties/>
+      <jsps>
+        <jsp name="custom" value="folderView_wiki.jsp"/>
+      </jsps>
+    </item>
+    <properties>
+      <property name="type" value="blog"/>
+    </properties>
+  </item>
+  <properties>
+    <property name="caption" value="Wiki review"/>
+    <property name="name" value="folderView_wiki"/>
+    <property name="family" value="blog"/>
+    <property name="defaultToFileEntries" value="false"/>
+    <property name="icon" value="/icons/folder_blue_wiki.gif"/>
+  </properties>
+  <export-mappings/>
+</definition>

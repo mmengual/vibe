@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template type="5">
+  <attribute name="templateTitle" type="string">Pictures folder</attribute>
+  <attribute name="templateDescription" type="description">&lt;p&gt;Album photo revisité&lt;/p&gt;</attribute>
+  <attribute name="title" type="string">Pictures</attribute>
+  <attribute name="description" type="description"></attribute>
+  <attribute name="iconName" type="string">/icons/folder_blue_discussion.gif</attribute>
+  <attribute name="name" type="string">pictures_folder</attribute>
+  <property name="library">true</property>
+  <property name="mirrored">false</property>
+  <property name="uniqueTitle">false</property>
+  <property name="inheritFunctionMembership">true</property>
+  <property name="inheritDefinitions">false</property>
+  <property name="inheritTeamMembers">true</property>
+  <definition name="pictures" databaseId="ff8081813c04da65013c1eb99e100221"/>
+  <definition name="picture_form" databaseId="ff8081813c1ee1e7013c29f2124303f6"/>
+</template>

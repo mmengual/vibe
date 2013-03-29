@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template type="5">
+  <attribute name="templateTitle" type="string">Rubrique</attribute>
+  <attribute name="templateDescription" type="description">&lt;p&gt;&lt;span style="white-space: pre;"&gt;La rubrique d&amp;#39;un wiki&lt;/span&gt;&lt;/p&gt;</attribute>
+  <attribute name="title" type="string">Rubrique</attribute>
+  <attribute name="description" type="description"></attribute>
+  <attribute name="iconName" type="string">icons/folder_blue_wiki.gif</attribute>
+  <attribute name="name" type="string">folder_rubrique</attribute>
+  <property name="library">true</property>
+  <property name="mirrored">false</property>
+  <property name="uniqueTitle">false</property>
+  <property name="inheritFunctionMembership">true</property>
+  <property name="inheritDefinitions">false</property>
+  <property name="inheritTeamMembers">true</property>
+  <definition name="folderView_wikitopic" databaseId="ff8081813b1840c0013b22aea19903a3"/>
+  <definition name="article" databaseId="ff8081813b28e350013b4145e0da01c8"/>
+</template>

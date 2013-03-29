@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definition name="pictures" caption="Pictures" type="5" nextId="10" definitionType="5" databaseId="ff8081813c04da65013c1eb99e100221"> 
+  <item name="folderForm" caption="__folder_form" type="form" id="1" display="form"> 
+    <properties/>  
+    <item name="title" caption="__title" type="data" id="2"> 
+      <properties> 
+        <property name="caption" value="__title"/>  
+        <property name="name" value="title"/>  
+        <property name="width" value="60"/>  
+        <property name="generated" value=""/>  
+        <property name="itemSource" value=""/>  
+        <property name="required" value=""/> 
+      </properties> 
+    </item>  
+    <item name="description" caption="__description" type="data" id="3"> 
+      <properties> 
+        <property name="caption" value="__description"/>  
+        <property name="name" value="description"/>  
+        <property name="height" value=""/>  
+        <property name="required" value=""/>  
+        <property name="fieldModificationAllowed" value=""/> 
+      </properties> 
+    </item>  
+    <item name="folderIcon" caption="__icon" type="data" id="4"> 
+      <properties> 
+        <property name="caption" value="__icon"/>  
+        <property name="name" value="iconName"/> 
+      </properties> 
+    </item> 
+  </item>  
+  <item name="forumView" caption="__folder_view" id="5"> 
+    <properties> 
+      <property name="type" value="folder"/> 
+    </properties>  
+    <item name="dashboardCanvas" caption="__dashboard_canvas" id="6"> 
+      <properties> 
+        <property name="caption" value="__dashboard_canvas"/> 
+      </properties> 
+    </item>  
+    <item name="folderDescriptionView" caption="__description" id="7"> 
+      <properties> 
+        <property name="caption" value="__description"/>  
+        <property name="viewType" value="this"/> 
+      </properties> 
+    </item>  
+    <item name="customJspView" caption="__custom_jsp" category="generalViewLayout" display="view" id="9"> 
+      <properties/>  
+      <jsps> 
+        <jsp name="custom" value="folderView_pictures.jsp"/> 
+      </jsps>  
+      <operations> 
+        <operation name="addOption" caption="__add"/>  
+        <operation name="copyItem" caption="__copy"/>  
+        <operation name="deleteItem" caption="__delete"/>  
+        <operation name="modifyItem" caption="__modify"/>  
+        <operation name="moveItem" caption="__move"/> 
+      </operations> 
+    </item> 
+  </item>  
+  <properties> 
+    <property name="caption" value="Pictures"/>  
+    <property name="name" value="pictures"/>  
+    <property name="defaultToFileEntries" value="true"/>  
+    <property name="icon" value="/icons/folder_blue_camera.gif"/> 
+  </properties>  
+  <export-mappings/>
+</definition>

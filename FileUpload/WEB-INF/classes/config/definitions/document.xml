@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definition name="document" caption="Document" type="1" nextId="32" definitionType="1" databaseId="ff8081813bad2d76013bb3ce21bb0418">
+  <item name="entryForm" caption="__entry_form_definition" type="form" id="1" display="form">
+    <properties/>
+    <item name="entryFormForm" caption="__form" id="2">
+      <properties>
+        <property name="name" value="form1"/>
+        <property name="type" value="form"/>
+      </properties>
+      <item name="title" caption="__title" type="data" id="3" dataType="title" display="form">
+        <properties>
+          <property name="caption" value="__title"/>
+          <property name="name" value="title"/>
+          <property name="width" value="60"/>
+          <property name="generated" value="true"/>
+          <property name="itemSource" value="ss_none"/>
+          <property name="required" value="true"/>
+        </properties>
+      </item>
+      <item name="guestName" caption="__guestName" type="data" id="4">
+        <properties>
+          <property name="caption" value="__guest.default.caption"/>
+          <property name="name" value="_guestName"/>
+          <property name="width" value=""/>
+          <property name="required" value=""/>
+        </properties>
+      </item>
+      <item name="table2" caption="__two_column_table" category="generalLayout" display="form" id="26">
+        <properties>
+          <property name="caption" value="tab1"/>
+          <property name="name" value="tab1"/>
+          <property name="width1" value="25%"/>
+          <property name="width2" value=""/>
+          <property name="align1" value="left"/>
+          <property name="align2" value="left"/>
+          <property name="valign1" value="middle"/>
+          <property name="valign2" value="middle"/>
+        </properties>
+        <item name="user_list" caption="__user_list" type="data" dataType="userList" category="commonEntryData" display="form" id="25">
+          <properties>
+            <property name="caption" value="Destinataire"/>
+            <property name="name" value="destinataire"/>
+            <property name="required" value="true"/>
+            <property name="fieldModificationAllowed" value="false"/>
+            <property name="includeCreatorOnAdd" value="false"/>
+          </properties>
+        </item>
+        <item name="file" caption="__file_upload" type="data" dataType="fileList" category="commonEntryData" display="form" id="28">
+          <properties>
+            <property name="caption" value="Pièce jointe"/>
+            <property name="name" value="pieceJointe"/>
+            <property name="width" value="50"/>
+            <property name="storage" value="simpleFileRepository"/>
+            <property name="required" value="true"/>
+          </properties>
+        </item>
+      </item>
+      <item name="expandableDiv" caption="__expandable_div" category="generalLayout" display="form" id="29">
+        <properties>
+          <property name="caption" value="Autre pièce jointe"/>
+        </properties>
+        <item name="attachFiles" caption="__attach_files" type="data" id="6" dataType="fileList" category="commonEntryData" display="form">
+          <properties>
+            <property name="caption" value="__attach_files"/>
+            <property name="name" value="ss_attachFile"/>
+            <property name="width" value="20"/>
+            <property name="number" value="5"/>
+            <property name="storage" value="simpleFileRepository"/>
+            <property name="hide" value="false"/>
+          </properties>
+        </item>
+      </item>
+      <item name="customJsp" caption="__custom_jsp" type="data" dataType="customJsp" category="generalLayout" display="form" id="23">
+        <properties>
+          <property name="caption" value="form_sendfile"/>
+          <property name="name" value="form_sendfile"/>
+        </properties>
+        <jsps>
+          <jsp name="custom" value="form_sendfile.jsp"/>
+        </jsps>
+      </item>
+      <item name="entryFormButtons" caption="__form_buttons" id="7">
+        <properties>
+          <property name="alignment" value=""/>
+        </properties>
+        <item name="okButton" caption="__ok_button" id="8">
+          <properties>
+            <property name="caption" value="__ok"/>
+            <property name="onClick" value=""/>
+          </properties>
+        </item>
+        <item name="cancelButton" caption="__cancel_button" id="9">
+          <properties>
+            <property name="caption" value="__cancel"/>
+            <property name="onClick" value=""/>
+          </properties>
+        </item>
+      </item>
+    </item>
+  </item>
+  <item name="entryView" caption="__entry_view_definition" id="10" display="view">
+    <properties>
+      <property name="type" value="entryView"/>
+    </properties>
+    <item name="titleView" caption="__title" id="11">
+      <properties>
+        <property name="caption" value="__title"/>
+        <property name="showDocNumber" value=""/>
+      </properties>
+    </item>
+    <item name="entrySignatureView" caption="__entry_signature" id="12">
+      <properties>
+        <property name="caption" value=""/>
+        <property name="showPicture" value=""/>
+        <property name="displayType" value=""/>
+      </properties>
+    </item>
+    <item name="descriptionView" caption="__description" id="13">
+      <properties>
+        <property name="caption" value="__description"/>
+      </properties>
+    </item>
+    <item name="entryWorkflow" caption="__entry_workflow" id="14">
+      <properties>
+        <property name="caption" value="__entry_workflow"/>
+      </properties>
+    </item>
+    <item name="entryAttachments" caption="__entry_attachments" id="15">
+      <properties>
+        <property name="caption" value="__entry_attachments"/>
+      </properties>
+    </item>
+    <item name="entryComments" caption="__entry_comments" id="16">
+      <properties>
+        <property name="caption" value="__entry_comments"/>
+      </properties>
+    </item>
+  </item>
+  <item name="entryBlogView" caption="__entry_blog_view_definition" id="17" display="view">
+    <properties>
+      <property name="type" value="blog"/>
+    </properties>
+    <item name="titleBlogView" caption="__title" id="18">
+      <properties>
+        <property name="caption" value="__title"/>
+        <property name="showDocNumber" value=""/>
+      </properties>
+    </item>
+    <item name="descriptionBlogView" caption="__description" id="19">
+      <properties>
+        <property name="caption" value="__description"/>
+      </properties>
+    </item>
+    <item name="entryBlogWorkflow" caption="__entry_workflow" id="20">
+      <properties>
+        <property name="caption" value="__entry_workflow"/>
+      </properties>
+    </item>
+    <item name="entryBlogAttachments" caption="__entry_attachments" id="21">
+      <properties>
+        <property name="caption" value="__entry_attachments"/>
+      </properties>
+    </item>
+    <item name="entryBlogComments" caption="__entry_blog_comments" id="22">
+      <properties>
+        <property name="caption" value="__entry_comments"/>
+      </properties>
+    </item>
+  </item>
+  <properties>
+    <property name="caption" value="Document"/>
+    <property name="name" value="document"/>
+    <property name="family" value="file"/>
+    <property name="replyStyle" value=""/>
+  </properties>
+  <export-mappings/>
+</definition>

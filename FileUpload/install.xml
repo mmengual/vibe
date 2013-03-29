@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" >
+<title>File Upload</title>
+<author>Maxime MENGUAL</author>
+<creationDate>Decembre 2012</creationDate> <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license> <authorEmail>mmengual@prestigereseaux.fr</authorEmail> <authorUrl>www.prestigereseaux.fr</authorUrl>
+<description>Application de transfert de fichier</description> <usage></usage> </extension>

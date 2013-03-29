@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" >
+<title>Picture Folder</title>
+<author>Maxime MENGUAL</author>
+<creationDate>Janvier 2013</creationDate> <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license> <authorEmail>mmengual@prestigereseaux.fr</authorEmail> <authorUrl>www.prestigereseaux.fr</authorUrl>
+<description>
+Le dossier d'image revisité. 
+</description> 
+<usage>
+- La vue de l'album photo a été repensé.
+- La suppression, l'ajout et la modification des images a été simplifié.
+</usage> 
+</extension>

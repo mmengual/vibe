@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template type="5">
+  <attribute name="templateTitle" type="string">Custom Wiki</attribute>
+  <attribute name="templateDescription" type="description">&lt;p&gt;Wiki de la mairie d&amp;#39;Aix-en-provence.&lt;/p&gt;</attribute>
+  <attribute name="title" type="string">Custom Wiki</attribute>
+  <attribute name="description" type="description"></attribute>
+  <attribute name="iconName" type="string">icons/folder_blue_wiki.gif</attribute>
+  <attribute name="name" type="string">Custom Wiki</attribute>
+  <property name="library">false</property>
+  <property name="mirrored">false</property>
+  <property name="uniqueTitle">false</property>
+  <property name="inheritFunctionMembership">true</property>
+  <property name="inheritDefinitions">false</property>
+  <property name="inheritTeamMembers">false</property>
+  <property name="teamMemberName">casteresy</property>
+  <property name="teamMemberName">bob</property>
+  <property name="teamMemberName">tina</property>
+  <definition name="folderView_wiki" databaseId="ff8081813b1840c0013b1845954d0002"/>
+  <dashboard>
+    <property name="nextComponentId">1</property>
+    <property name="showComponents">true</property>
+    <property name="version">1</property>
+    <property name="title"></property>
+    <property name="includeBinderTitle">false</property>
+    <layout name="wide_top">
+      <property name="id">binder_0</property>
+      <property name="scope">binder</property>
+      <property name="visible">true</property>
+    </layout>
+    <component name="binder_0">
+      <property name="displayStyle">border</property>
+      <property name="title"></property>
+      <property name="name">teamMembersList</property>
+      <property name="roles"></property>
+      <data>
+        <property name="resultsCount">10</property>
+      </data>
+    </component>
+  </dashboard>
+</template>

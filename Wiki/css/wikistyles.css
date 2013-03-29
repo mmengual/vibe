@@ -1,0 +1,72 @@
+
+div.rubrique {
+	margin: 5px 20px 10px 35px;	
+}
+
+div.logo {
+	margin-top: -6px;
+}
+
+#maix-wiki #header {
+	 border: 1px rgba(0,0,0,0.20) solid;
+	 border-radius: 3px;
+	 margin-bottom: 5px;
+	 background-color: rgba(0,0,200,0.05);
+     behavior: url('/ssf/js/pie.htc');
+}
+
+
+
+#maix-wiki h1 {
+	 margin: 0;
+	 padding: 0;
+		 width: 90%;
+	 border: 1px #70a9c7 solid;
+	 border-radius: 3px;
+	 float: left;
+     behavior: url('/ssf/js/pie.htc');
+ }
+ 
+ #maix-wiki h2{
+	 margin: 5px 10px 10px 37px;
+	 background-image:url('/ssf/pics/Bluebg_rounded.png');
+	 background-repeat: no-repeat; 	 
+ }
+ 
+ #maix-wiki #col1 {
+	 width: 20%;
+	 height: 800px;
+	 float: left; 
+ 	 border: 1px #70a9c7 solid;
+	 border-radius: 3px;
+ 	 background-color: rgba(0,0,255,0.05);
+     behavior: url('/ssf/js/pie.htc');
+ }
+ 
+ #maix-wiki #col1 li {
+	 	margin-bottom: -10px;
+	 	margin-left: -20px;
+ }
+ 
+ #maix-wiki #col2 {
+	 width: 79%;
+	 height: 800px;
+	 float: right;
+   	 border: 1px #70a9c7 solid;
+	 border-radius: 10px;
+     behavior: url('/ssf/js/pie.htc');
+ }
+ 
+ #maix-wiki #col2outer #article { 
+  	 border: 1px #70a9c7 solid;
+	 border-radius: 10px;
+     behavior: url('/ssf/js/pie.htc');
+ }
+
+#maix-wiki h3 {
+	font-family: cursive;
+	font-size: large;
+}	 
+
+
+	
